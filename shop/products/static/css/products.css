@@ -1,0 +1,21 @@
+body {
+    padding-top: 56px;
+}
+a{
+    color: #008819; 
+}
+a:hover{
+    color: #01b50d; 
+}
+.page-link{
+    color: #01b50d; 
+}
+.page-link:hover{
+    color: #008819; 
+}
+.page-item.active .page-link{
+    background: #28a745;
+}
+.list-group-item{    
+    text-transform: uppercase;
+}

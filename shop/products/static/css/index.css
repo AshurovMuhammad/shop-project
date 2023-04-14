@@ -1,0 +1,29 @@
+body {
+    background: url("../vendor/img/women.jpg") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top: 56px;
+}
+
+#start-purchase-btn {
+    background-color: #9dff00;
+    border-color: #00410c;    
+}
+
+#start-purchase-link {
+    text-decoration: none;
+    color: #00410c;
+}
+.container p{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    margin-bottom: 60px;
+}
+.container .col-lg-6{
+    margin-top: 20px;
+}
+
