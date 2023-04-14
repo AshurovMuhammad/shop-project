@@ -1,0 +1,164 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "GUESS JEANS - DJINSIY KOYLAK",
+      "image": "products_images/full_img_2425026.jpg",
+      "description": "Guess Jeans kolleksiyasidan libos. Olovli model denimdan qilingan.\r\n- Yorqin uslub.\r\n- Uzun yengli.\r\n- yoqali model.\r\n- tugmalar bilan mahkamlangan.\r\n- Belga bog'lang.\r\n- Dekorativ xiralashgan denim.\r\n- Yeng uzunligi: 56 sm.\r\n- Uzunligi: 88 sm.\r\n- Qo'ltiq kengligi: 42 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\n� Naqsh: tekis\r\n� Material: mato\r\n� Uzunlik: mini\r\n� Yeng: uzun\r\n� Material: jinsi shimlar\r\n� Bo�yin chizig�i: tugmali\r\n� Material: elastan bilan\r\n� Vaqti-vaqti bilan: tasodifiy\r\n� Uslub: yonib ketgan\r\nMurakkab:\r\n98% paxta, 2% elastan",
+      "short_description": "Guess Jeans kolleksiyasidan libos. Olovli model denimdan qilingan.",
+      "price": "470000.00",
+      "quantity": 25,
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "ANSWEAR LAB LIMITED",
+      "image": "products_images/full_img_2567196.jpg",
+      "description": "Answear Lab kolleksiyasidan liboslar. To'g'ri model silliq matodan qilingan.\r\n- To'g'ri mos.\r\n- Halter dekolte.\r\n- Orqa tomonda fermuar bor.\r\n- Kamar.\r\n- Fermuar bilan mahkamlanadi.\r\n- Uzunligi: 115 sm.\r\n- Qo'ltiq kengligi: 38 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\n� Naqsh: tekis\r\n� Uzunlik: midi\r\n� Yeng: yengsiz\r\n� Bo'yin chizig'i: yumaloq\r\n� Material: viskoza\r\n� Vaqti-vaqti bilan: tasodifiy\r\n� Uslub: tekis\r\nMurakkab:\r\n100% viskoza",
+      "short_description": "Answear Lab kolleksiyasidan liboslar. To'g'ri model silliq matodan qilingan.",
+      "price": "350000.00",
+      "quantity": 30,
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Yagona kolleksiyadan libos",
+      "image": "products_images/full_img_2478223.jpg",
+      "description": "Yagona kolleksiyadan libos. To'g'ri model naqshli matodan qilingan.\r\n- To'g'ri mos.\r\n- Uzun yengli.\r\n- Dumaloq dekolte.\r\n- Orqa tomonda fermuar bor.\r\n- Belga bog'lang.\r\n- Naqshli mato.\r\n- Yeng uzunligi: 56 sm.\r\n- Uzunligi: 119 sm.\r\n- Qo'ltiq kengligi: 45 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\n� Naqsh: naqshli\r\n� Material: mato\r\n� Uzunlik: midi\r\n� Yeng: uzun\r\n� Bo'yin chizig'i: yumaloq\r\n� Material: elastan bilan\r\n� Vaqti-vaqti bilan: tasodifiy\r\n� Uslub: tekis\r\nMurakkab:\r\nAstar: 100% polyester\r\nAsosiy: 1% elastan, 99% polyester",
+      "short_description": "Yagona kolleksiyadan libos. To'g'ri model naqshli matodan qilingan.",
+      "price": "175000.00",
+      "quantity": 35,
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "NIKE SPORTSWEAR",
+      "image": "products_images/full_img_2478223_SSB7pKi.jpg",
+      "description": "Nike Sportswear kolleksiyasidan yengil libos. To'g'ri kesilgan model yupqa elastik trikotajdan qilingan.\r\n- To'g'ri mos.\r\n- Qisqa yengli.\r\n- Dumaloq dekolte.\r\n- Yupqa, cho'ziluvchan trikotaj.\r\n- Chop etish bilan model.\r\n- Uzunligi: 90 sm.\r\n- Qo'ltiq kengligi: 47 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\n� Naqsh: chop etish\r\n� Uzunlik: mini\r\n� Bo'yin chizig'i: yumaloq\r\n� Yeng: kalta\r\n� Material: paxta\r\n� Vaqti-vaqti bilan: tasodifiy\r\n� Uslub: tekis\r\nMurakkab:\r\n100% paxta",
+      "short_description": "Nike Sportswear kolleksiyasidan yengil libos. To'g'ri kesilgan model yupqa elastik trikotajdan qilin",
+      "price": "140000.00",
+      "quantity": 32,
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "HUGO",
+      "image": "products_images/full_img_2522447.jpg",
+      "description": "Hugo kolleksiyasidan oqlangan kostyum. Model jun bilan matodan qilingan.\r\n- Qo'shimcha nozik uslub.\r\n- tugmalar bilan mahkamlangan.\r\n- Klassik lapellar.\r\n- Cho'ntaklar.\r\n- Chiziqli model.\r\n- O'q bilan shimlar.\r\n� Naqsh: tekis\r\n� Material: mato\r\n� Material: jun\r\nMurakkab:\r\nAstar: 100% viskoza\r\nAsosiy: 8% poliamid, 23% poliester, 69% yangi jun",
+      "short_description": "Hugo kolleksiyasidan oqlangan kostyum. Model jun bilan matodan qilingan.",
+      "price": "2800000.00",
+      "quantity": 5,
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "MANGO MAN",
+      "image": "products_images/full_img_2199112.jpg",
+      "description": "Mango Man kolleksiyasidan oqlangan kurtka. Model silliq matodan qilingan.\r\n- Slim-fit uslubi.\r\n- mahkamlagichdagi manjetli yenglar.\r\n- tugmalar bilan mahkamlangan.\r\n- Cho'ntaklar.\r\n- Ichki cho'ntaklar.\r\n- Chiziqli model.\r\nMurakkab:\r\nAstar: 55% poliester, 45% viskoza\r\nAsosiy: 2% elastan, 68% poliester, 30% viskoza\r\nYengi astar: 100% polyester",
+      "short_description": "Mango Man kolleksiyasidan oqlangan kurtka. Model silliq matodan qilingan.",
+      "price": "600000.00",
+      "quantity": 10,
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "NIGHT DRIVER",
+      "image": "products_images/full_img_2534635.jpg",
+      "description": "Medicine kolleksiyasidan kurtka. Model naqshli matodan qilingan.\r\n- Nozik shijoat.\r\n- Cho'ntaklar.\r\n- tugmalar bilan mahkamlangan.\r\n- Klassik lapellar.\r\n- Chiziqli model.\r\n- Qo'ltiq kengligi: 54 sm.\r\n- Yelka kengligi: 44 sm.\r\n- Yeng uzunligi: 64,5 sm.\r\n- Uzunligi: 74,5 sm.\r\n- O'lchovlar o'lcham uchun: M.\r\n� Naqsh: naqshli\r\n� Kesish: nozik\r\n� Material: mato\r\n� Astar: astarli\r\nMurakkab:\r\nAstar: 100% polyester\r\nAsosiy: 2% elastan, 85% poliester, 13% viskoza",
+      "short_description": "Medicine kolleksiyasidan kurtka. Model naqshli matodan qilingan.",
+      "price": "500000.00",
+      "quantity": 15,
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "PREMIUM BY JACK&JONES",
+      "image": "products_images/full_img_2429745.jpg",
+      "description": "Jack&Jones Premium kolleksiyasidan kundalik kurtka. Model silliq matodan qilingan.\r\n- Moda juda nozik kiyinish.\r\n- Cho'ntaklar.\r\n- Elkalari bilan.\r\n- tugmalar bilan mahkamlangan.\r\n- Yupqa cho'zilmaydigan mato.\r\n- Klassik lapellar.\r\n- Chiziqli model.\r\n- Yeng uzunligi: 62,5 sm.\r\n- Uzunligi: 73,5 sm.\r\n- Qo'ltiq kengligi: 50 sm.\r\n- Yelka kengligi: 45 sm.\r\n- Parametrlar o'lcham uchun: 48.\r\n� Naqsh: tekis\r\n� Material: mato\r\n� Astar: astarli\r\n� Material: jun\r\nMurakkab:\r\nAstar: 100% polyester\r\nAsosiy: 1% elastan, 77% poliester, 22% jun",
+      "short_description": "Jack&Jones Premium kolleksiyasidan kundalik kurtka. Model silliq matodan qilingan.",
+      "price": "400000.00",
+      "quantity": 7,
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "VERO MODA",
+      "image": "products_images/full_img_2556354.jpg",
+      "description": "Vero Moda kolleksiyasidan kozok. Naqshli trikotajdan yasalgan yumaloq bo'yinbog'li model.\r\n- To'g'ri mos.\r\n- Uzun yengli.\r\n- Dumaloq dekolte.\r\n- Qo'ltiq kengligi: 51 sm.\r\n- Yeng uzunligi: 66 sm.\r\n- Uzunligi: 62 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\n� Naqsh: naqshli\r\n� Bo'yin chizig'i: yumaloq\r\n� Material: jun\r\n� Trikotaj: yupqa\r\nMurakkab:\r\n22% akril, 4% elastan, 9% neylon, 50% qayta ishlangan polyester, 12% poliester, 3% jun",
+      "short_description": "Vero Moda kolleksiyasidan kozok. Naqshli trikotajdan yasalgan yumaloq bo'yinbog'li model.",
+      "price": "150000.00",
+      "quantity": 63,
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "MEDICINE RED",
+      "image": "products_images/full_img_2541253.jpg",
+      "description": "Medicine kolleksiyasidan kozok. Yarim golfli model, silliq trikotajdan qilingan.\r\n- To'g'ri mos.\r\n- Uzun yengli.\r\n- dekorativ tugmalar.\r\n- Yeng uzunligi: 63 sm.\r\n- Uzunligi: 60 sm.\r\n- Qo'ltiq kengligi: 54 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\nMurakkab:\r\n20% poliamid, 29% poliester, 51% viskoza",
+      "short_description": "Medicine kolleksiyasidan kozok. Yarim golfli model, silliq trikotajdan qilingan.",
+      "price": "190000.00",
+      "quantity": 45,
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "MEDICINE WHITE",
+      "image": "products_images/full_img_2528830.jpg",
+      "description": "Medicine kolleksiyasidan kozok. Yarim golfli model, silliq trikotajdan qilingan.\r\n- To'g'ri mos.\r\n- Uzun yengli.\r\n- dekorativ tugmalar.\r\n- Yeng uzunligi: 63 sm.\r\n- Uzunligi: 60 sm.\r\n- Qo'ltiq kengligi: 54 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\nMurakkab:\r\n20% poliamid, 29% poliester, 51% viskoza",
+      "short_description": "Medicine kolleksiyasidan kozok. Yarim golfli model, silliq trikotajdan qilingan.",
+      "price": "200000.00",
+      "quantity": 36,
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "MEDICINE GREEN",
+      "image": "products_images/full_img_2548677.jpg",
+      "description": "Medicine kolleksiyasidan kozok. Yarim golfli model, silliq trikotajdan qilingan.\r\n- To'g'ri mos.\r\n- Uzun yengli.\r\n- dekorativ tugmalar.\r\n- Yeng uzunligi: 63 sm.\r\n- Uzunligi: 60 sm.\r\n- Qo'ltiq kengligi: 54 sm.\r\n- O'lchovlar o'lcham uchun: S.\r\nMurakkab:\r\n20% poliamid, 29% poliester, 51% viskoza",
+      "short_description": "Medicine kolleksiyasidan kozok. Yarim golfli model, silliq trikotajdan qilingan.",
+      "price": "200000.00",
+      "quantity": 33,
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "LEVI'S",
+      "image": "products_images/full_img_2191484.jpg",
+      "description":

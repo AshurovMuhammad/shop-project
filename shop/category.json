@@ -1,0 +1,50 @@
+[
+  {
+    "model": "products.productcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Ko'ylak",
+      "description": ""
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Kostyum",
+      "description": ""
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Sviter",
+      "description": ""
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Jinslar",
+      "description": ""
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 5,
+    "fields": {
+      "name": "Sport shim",
+      "description": ""
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 6,
+    "fields": {
+      "name": "Kofta",
+      "description": ""
+    }
+  }
+]
