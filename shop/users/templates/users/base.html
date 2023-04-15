@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>Store - Авторизация</title>
+    <title>Store - {% block title %}{% endblock %}</title>
     <link href="{% static 'css/auth.css' %}" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
             crossorigin="anonymous"></script>
@@ -19,13 +19,25 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert"
+
+                        {% if messages or form.errors %}
+                        <div class="alert
+                        {% if messages %} alert-success {% else %} alert-warning {% endif %}
+                        alert-dismissible fade show" role="alert"
                              style="margin-top: 50px;">
-                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                            {% if messages %}
+                                {% for message in messages %}
+                                    {{ message }}
+                                {% endfor %}
+                            {% else %}
+                                {{ form.errors }}
+                            {% endif %}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+                        {% endif %}
+
 
                         {% block content %}
 
