@@ -55,6 +55,14 @@
                 </a>
             </div>
 
+            <div>
+                <form action="{% url 'products' %}" method="GET">
+                    <input type="search" class="search" name="search">
+                    <button type="submit" class="page-link search">Qidirish</button>
+                </form>
+
+            </div>
+
             <div class="row">
                 {% for product in products %}
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -72,7 +80,9 @@
                             <p class="card-text">{{ product.short_description }}</p>
                         </div>
                         <div class="card-footer text-center">
-                            <button type="button" class="btn btn-outline-success">Savatga solish</button>
+                            <a href="{% url 'basket_add' product.id %}">
+                                <button type="button" class="btn btn-outline-success">Savatga solish</button>
+                            </a>
                         </div>
                     </div>
                 </div>

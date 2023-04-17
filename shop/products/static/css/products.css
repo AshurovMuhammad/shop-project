@@ -19,3 +19,13 @@ a:hover{
 .list-group-item{    
     text-transform: uppercase;
 }
+
+.search{
+    width: 100%;
+    margin: 0 0 26px;
+    border: 1px solid #c0c0c0;
+    border-radius: 0.25rem;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 18px
+}

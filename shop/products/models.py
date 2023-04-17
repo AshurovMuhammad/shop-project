@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import User
 
 
 # Create your models here.
@@ -29,3 +30,20 @@ class Product(models.Model):
     class Meta:
         verbose_name = "Mahsulot"
         verbose_name_plural = "Mahsulotlar"
+
+
+class Basket(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=0)
+    created_database = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username}ning savati | Maxsulot {self.product.name}"
+
+    def sum(self):
+        return self.quantity * self.product.price
+
+    class Meta:
+        verbose_name = 'Savatdagi maxsulot'
+        verbose_name_plural = 'Savatdagi maxsulotlar'
