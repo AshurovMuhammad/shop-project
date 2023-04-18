@@ -22,6 +22,7 @@ class UserLoginForm(AuthenticationForm):
 class UserRegistrationForm(UserCreationForm):
     first_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Ismingizni kiriting'}))
     last_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Familiyangizni kiriting'}))
+    phone = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "Telefon raqamingizni kiriting"}))
     username = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Foydalanuvchi nomi'}))
     email = forms.CharField(widget=forms.EmailInput(attrs={'placeholder': 'Pochta manzil'}))
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Parolni kiriting'}))
@@ -34,7 +35,7 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username', 'email', 'password1', 'password2')
+        fields = ('first_name', 'last_name', 'phone', 'username', 'email', 'password1', 'password2')
 
 
 class UserProfileForm(UserChangeForm):
@@ -50,4 +51,4 @@ class UserProfileForm(UserChangeForm):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'first_name', 'last_name', 'image')
+        fields = ('username', 'email', 'first_name', 'last_name', 'phone', 'image')

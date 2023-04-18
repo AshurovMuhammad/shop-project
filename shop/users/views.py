@@ -3,6 +3,7 @@ from .forms import UserLoginForm, UserRegistrationForm, UserProfileForm
 from django.contrib import auth, messages
 from products.models import Basket
 from django.contrib.auth.decorators import login_required
+from products.forms import OrderForm
 
 
 # Create your views here.
@@ -43,6 +44,7 @@ def register(request):
 
 @login_required
 def profile(request):
+    form_phone = OrderForm()
     user = request.user
     if request.method == 'POST':
         form = UserProfileForm(data=request.POST, files=request.FILES, instance=user)
@@ -62,7 +64,8 @@ def profile(request):
         'form': form,
         'baskets': Basket.objects.filter(user=user),
         'total_quantity': total_quantity,
-        'total_sum': total_sum
+        'total_sum': total_sum,
+        'form_phone': form_phone
     }
     return render(request, 'users/profile.html', context=context)
 

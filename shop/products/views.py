@@ -3,6 +3,7 @@ from .models import Product, ProductCategory, Basket
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from telebot.sendmessage import send_telegram
 
 
 # Create your views here.
@@ -71,3 +72,22 @@ def basket_delete(request, id):
     basket = Basket.objects.get(id=id)
     basket.delete()
     return redirect(request.META.get("HTTP_REFERER"))
+
+
+def thanks_page(request):
+    user = request.user
+    baskets = Basket.objects.filter(user=user)
+    name = user.first_name
+    phone = user.phone
+    res = ""
+    for basket in baskets:
+        pr_name = basket.product.name
+        quantity = str(basket.quantity)
+        ls = f"\n{pr_name} - {quantity} dona"
+        res += ls
+    send_telegram(tg_name=name, tg_phone=phone, tg_order=res)
+    context = {
+        "title": "Raxmat"
+    }
+
+    return render(request, 'products/thanks.html', context=context)

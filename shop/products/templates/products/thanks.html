@@ -1,0 +1,18 @@
+{% extends 'products/base.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block css %}
+<link href="{% static 'css/products.css' %}" rel="stylesheet">{% endblock %}
+{% block content %}
+<section>
+    <div class="container" style="text-align: center; padding-top: 200px;">
+        <div class="thank"><h1>Buyurtmangiz uchun raxmat!</h1>
+            <h3>Tez orada operatorlarimiz siz bilan bo'lanishadi ☻</h3>
+        </div>
+
+        <a href="{% url 'profile' %}">
+            <button class="btn btn-outline-success">Profilga qaytish</button>
+        </a>
+    </div>
+</section>
+{% endblock %}

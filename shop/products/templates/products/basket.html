@@ -39,7 +39,10 @@
                     <h4 class="float-right">{{ total_sum }} so'm.</h4>
                 </div>
             </div>
-            <button type="button" class="btn btn-success btn-lg float-right">Buyurtma berish</button>
+
+            <a href="{% url 'thanks_page' %}">
+                <button type="submit" class="btn btn-success btn-lg float-right">Buyurtma berish</button>
+            </a>
         </div>
 
 {% else %}
