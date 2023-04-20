@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from .models import Product, ProductCategory, Basket
 from django.core.paginator import Paginator
@@ -37,14 +38,11 @@ def products(request, category_id=None):
 
 
 @login_required
-def basked_add(request, product_id):
-    current_page = request.META.get("HTTP_REFERER")
+def basket_add(request, product_id):
+    current_page = 'profile'
     product = Product.objects.get(id=product_id)
     baskets = Basket.objects.filter(user=request.user, product=product)
     if not baskets.exists():
-        # basket = Basket(user=request.user, product=product, quantity=1)
-        # basket.save()
-
         Basket.objects.create(user=request.user, product=product, quantity=1)
         return redirect(current_page)
     else:
@@ -54,24 +52,78 @@ def basked_add(request, product_id):
         return redirect(current_page)
 
 
-def basked_minus(request, product_id):
-    current_page = request.META.get("HTTP_REFERER")
-    product = Product.objects.get(id=product_id)
-    baskets = Basket.objects.filter(user=request.user, product=product)
-    if not baskets.exists():
-        Basket.objects.create(user=request.user, product=product, quantity=1)
-        return redirect(current_page)
-    else:
-        basket = baskets.first()
-        basket.quantity -= 1
-        basket.save()
-        return redirect(current_page)
+def plus_cart(request):
+    if request.method == 'GET':
+        prod_id = request.GET['prod_id']
+        c = Basket.objects.get(Q(product=prod_id) & Q(user=request.user))
+        c.quantity += 1
+        c.save()
+        user = request.user
+        baskets = Basket.objects.filter(user=user)
+
+        one_price = 0
+        for res in baskets:
+            one_price = res.sum()
+        total_quantity = sum(basket.quantity for basket in baskets)
+        total_price = sum(basket.sum() for basket in baskets)
+
+        data = {
+            'quantity': c.quantity,
+            'total_price': total_price,
+            'total_quantity': total_quantity,
+            "one_price": one_price,
+        }
+        return JsonResponse(data)
 
 
-def basket_delete(request, id):
-    basket = Basket.objects.get(id=id)
-    basket.delete()
-    return redirect(request.META.get("HTTP_REFERER"))
+def minus_cart(request):
+    if request.method == 'GET':
+        prod_id = request.GET['prod_id']
+        c = Basket.objects.get(Q(product=prod_id) & Q(user=request.user))
+        c.quantity -= 1
+        c.save()
+        user = request.user
+        baskets = Basket.objects.filter(user=user)
+
+        one_price = 0
+        for res in baskets:
+            one_price = res.sum()
+        total_quantity = sum(basket.quantity for basket in baskets)
+
+        total_price = sum(basket.sum() for basket in baskets)
+
+        data = {
+            'quantity': c.quantity,
+            'total_quantity': total_quantity,
+            "one_price": one_price,
+            'total_price': total_price,
+        }
+        return JsonResponse(data)
+
+
+def remove_cart(request):
+    if request.method == 'GET':
+        prod_id = request.GET['prod_id']
+        c = Basket.objects.get(Q(product=prod_id) & Q(user=request.user))
+        c.quantity += 1
+        c.delete()
+        user = request.user
+        baskets = Basket.objects.filter(user=user)
+
+        one_price = 0
+        for res in baskets:
+            one_price = res.sum()
+        total_quantity = sum(basket.quantity for basket in baskets)
+
+        total_price = sum(basket.sum() for basket in baskets)
+
+        data = {
+            'quantity': c.quantity,
+            'total_quantity': total_quantity,
+            "one_price": one_price,
+            'total_price': total_price,
+        }
+        return JsonResponse(data)
 
 
 def thanks_page(request):
